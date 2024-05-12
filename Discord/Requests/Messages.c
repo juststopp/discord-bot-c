@@ -9,18 +9,18 @@ enum BUTTON_STYLE {
     LINK = 5
 };
 
-struct Message {
+struct MessageComponent {
     cJSON *message;
     cJSON *components;
 };
 
-struct Message create_message_component(char content[]) {
+struct MessageComponent create_message_component(char content[]) {
     cJSON *message_component = cJSON_CreateObject();
     cJSON_AddStringToObject(message_component, "content", content);
 
     cJSON *row = cJSON_AddArrayToObject(message_component, "components");
 
-    struct Message message = { message_component, row };
+    struct MessageComponent message = { message_component, row };
     return message;
 }
 

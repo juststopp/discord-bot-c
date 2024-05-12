@@ -3,10 +3,9 @@
 #include <libwebsockets.h>
 #include <stdbool.h>
 
+#include "../Config.c"
 #include "../JSON.c"
 #include "../Utils/Strings.c"
-
-#define TOKEN "OTAwMzczNjc5OTM3MDU2ODU5.GcKKI9.pxPjhy1cVxwo0rMbViqFNrr0dTzW3YVPdrgt2A"
 
 bool CONNECTED = false;
 

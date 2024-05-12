@@ -3,8 +3,7 @@
 #include <stdlib.h>
 #include <curl/curl.h>
 #include "../JSON.c"
-
-const char AUTH[] = "Authorization: Bot OTAwMzczNjc5OTM3MDU2ODU5.GcKKI9.pxPjhy1cVxwo0rMbViqFNrr0dTzW3YVPdrgt2A";
+#include "../Config.c"
 
 struct url_data {
     size_t size;
